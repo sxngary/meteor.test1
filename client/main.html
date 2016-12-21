@@ -1,0 +1,23 @@
+<head>
+  <title>test1</title>
+</head>
+
+<body>
+  <h1>Gaurav Saxena</h1>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  
+  <input type="text" name="text_msg" id="text_msg">
+  <button id="btn_msg" >Send</button>
+  <div class="msg-div" style="display: none; color:green;"></div>
+  <table >
+      <tr><th>Message</th><th>Created</th><th>Action</th></tr>
+    {{#each msgList}}
+      <tr><td>{{msg}}</td><td>{{dateFormat created}}</td><td><a href="javascript:void()" class="msg_delete" id="{{_id}}">Deleted</a></td></tr>
+    {{/each}}
+  </table>
+</template>
+
+

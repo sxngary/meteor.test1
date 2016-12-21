@@ -1,0 +1,6 @@
+/* CSS declarations go here */
+table, th, td {
+    border: 1px solid black;
+}
+
+.msg_delete{cursor: pointer; color: blue;}
